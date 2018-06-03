@@ -11,13 +11,14 @@
 
 % moderncv themes
 %\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
-\moderncvtheme[green]{classic}                % idem
 \moderncvtheme[blue]{classic}                % idem
 
 \usepackage[T1]{fontenc}
 % character encoding
 \usepackage[utf8x]{inputenc}                   % replace by the encoding you are using
 \usepackage[french]{babel}
+
+\usepackage{fontawesome}
 
 % adjust the page margins
 % \usepackage[scale=0.8]{geometry}
@@ -28,11 +29,23 @@
 \fancyfoot[LE,RO]{\thepage}           % page number in "outer" position of footer line
 \fancyfoot[RE,LO]{\footnotesize } % other info in "inner" position of footer line
 
+
+% Redefine icons
+%\renewcommand*{\addresssymbol}{}
+\renewcommand*{\mobilephonesymbol}{\faMobile \space}
+%\renewcommand*{\fixedphonesymbol}{}
+%\renewcommand*{\faxphonesymbol}{}
+\renewcommand*{\emailsymbol}{\faEnvelope \space}
+%\renewcommand*{\homepagesymbol}{}
+%\renewcommand*{\linkedinsocialsymbol}{}
+%\renewcommand*{\twittersocialsymbol}{}
+%\renewcommand*{\githubsocialsymbol}{}
+
 % personal data
 \firstname{Damien}
 \familyname{PIQUET}
-\title{Administrateur Systèmes et Réseaux}               % optional, remove the line if not wanted
-\address{39 Rue Froide}{14000 Caen}    % optional, remove the line if not wanted
+\title{Développeur / SysAdmin}               % optional, remove the line if not wanted
+\address{7, Chemin patte d'oie}{14111 Louvigny}    % optional, remove the line if not wanted
 \mobile{06 43 26 80 90}                    % optional, remove the line if not wanted
 %\phone{<Phone number>}                      % optional, remove the line if not wanted
 %\fax{<Fax number>}                          % optional, remove the line if not wanted
@@ -52,10 +65,14 @@
 \pagestyle{empty}
 
 %Section
-\section{Informations Personnelles}
-\cvcomputer{Né le}{\small 20 Mai 1988 (Granville)\normalsize} {Permis}{\small B, véhiculé\normalsize}
-\cvcomputer{Langues}{\small Français, Anglais (lu, écrit, parlé)\normalsize} {Git}{\small \url{https://github.com/dpiquet}\normalsize}
-%\cvline{LinkedIn}{\small \url{<Link to profile>}\normalsize}
+\section{\faUser \space Informations Personnelles}
+\cvcomputer{Né le :}{\small 20 Mai 1988 (Granville)\normalsize} {Permis :}{\small B, véhiculé\normalsize}
+\cvcomputer{Langues :}{\small Français, Anglais (lu, écrit, parlé)\normalsize}{}{}
+
+\hfill \break
+
+\cvcomputer{\faGithubSquare}{\small \url{https://github.com/dpiquet}\normalsize}{\faCubes}{\small \url{https://hub.docker.com/u/dpik/}}
+\cvline{\faLinkedinSquare}{\small \url{https://www.linkedin.com/in/dpiquet/}\normalsize}
 %\cvline{Blog}{\small \url{<Link to profile>}\normalsize}
 %\cvline{Skype}{\small <skype>\normalsize}
 
@@ -64,37 +81,47 @@
 %\cvline{}{\Large <Desidered employment>}
 %\cvline{}{\small <Skills>}
 
-%Section
-\section{Compétences techniques} 
-\cvcomputer{Langages}{C/C++, Perl, PHP, HTML/CSS, XML, JavaScript/Ajax, SQL} {Scripting}{Bash, batch, expressions rationnelles POSIX}
-\cvcomputer{Plateformes}{Linux Debian, Gentoo, Ubuntu, Windows Server}  {Services}{DNS, DHCP, PXE/BOOTP, MySQL, Apache2}
-\cvcomputer{Outils}{OpenOffice, Latex, Git, Nagios, WordPress, PrestaShop, Dokuwiki} {Virtualisation}{VMWare ESX, Proxmox VE, VirtualBox}
+\hfill \break
 
 %Section
-\section{Experiences Professionnelles}
-\subsection{Contrats}
-\cventry{2014 à 2015}{Administrateur Système / Réseau}{DoYouSoft SA}{Béziers}{}{} % arguments 3 to 6 are optional
-\cventry{2012 à 2014}{Apprenti Administrateur Système / Réseau}{IUT}{Béziers}{}{} % arguments 3 to 6 are optional
+\section{\faCogs \space Compétences techniques} 
+\cvcomputer{Langages :}{PHP, HTML/CSS, XML, JavaScript/Ajax, SQL, Perl, Python} {Scripting :}{Bash, batch, expressions rationnelles POSIX}
+\cvcomputer{Plateformes :}{Docker, Linux Debian, Ubuntu} {Services :}{DNS, MySQL, Postgres, Apache2, RabbitMq, Memcached, Git, SVN, Redmine, Jenkins}
+\cvcomputer{Frameworks :}{Symfony, Drupal, WordPress, Django, PHPUnit}{Virtualisation :}{Proxmox VE, VirtualBox}
+
+\hfill \break
+
+%Section
+\section{\faLineChart \space Expériences Professionnelles}
+%\subsection{Contrats}
+\cventry{2015 à aujourd'hui}{Développeur / SysAdmin}{Téïcée SARL}{14760 Brettevile/Odon}{}{}
+
+\cventry{2014 à 2015}{Administrateur Système / Réseau}{DoYouSoft SA}{34500 Béziers}{}{} % arguments 3 to 6 are optional
+\cventry{2012 à 2014}{Apprenti Administrateur Système / Réseau}{IUT de Béziers}{34500 Béziers}{}{} % arguments 3 to 6 are optional
 \cventry{2011}{Réalisation site web}{Clinique Henry Guillard}{50430 Coutances}{}{} % arguments 3 to 6 are optional
-\cventry{2011}{Mise en place de CMS}{Centre Départemental de l'enfance de la Manche}{50300 Avranches}{}{} % arguments 3 to 6 are optional
-\cventry{2009}{Technicien informatique grand public}{Buro+}{50400 Coutances}{}{} % arguments 3 to 6 are optional
-\cventry{2009}{Technicien Réseau}{Clinique Henry Guillard}{50400 Coutances}{}{} % arguments 3 to 6 are optional
+%\cventry{2011}{Mise en place de CMS}{Centre Départemental de l'enfance de la Manche}{50300 Avranches}{}{} % arguments 3 to 6 are optional
+%\cventry{2009}{Technicien informatique grand public}{Buro+}{50430 Coutances}{}{} % arguments 3 to 6 are optional
+%\cventry{2009}{Technicien Réseau}{Clinique Henry Guillard}{50430 Coutances}{}{} % arguments 3 to 6 are optional
 
-\subsection{Stages}
-\cventry{2011}{Technicien informatique grand public}{Buro+}{50400 Coutances}{}{} % arguments 3 to 6 are optional
-\cventry{2010}{Technicien informatique}{Clinique Henry Guillard}{50400 Coutances}{}{} % arguments 3 to 6 are optional
+%\subsection{Stages}
+%\cventry{2011}{Technicien informatique grand public}{Buro+}{50430 Coutances}{}{} % arguments 3 to 6 are optional
+%\cventry{2010}{Technicien informatique}{Clinique Henry Guillard}{50430 Coutances}{}{} % arguments 3 to 6 are optional
 
-\section{Projets personnels}
-\cventry{2013 à aujourd'hui}{Développement plugin Nagios supervision de clusters Proxmox VE}{}{}{}{} % arguments 3 to 6 are optional
+\hfill \break
+
+\section{\faLightbulbO \space Projets personnels}
+\cventry{2018}{Développement interface web de développement pour Memcached}{}{}{}{}
 \cventry{2014}{Relecture technique livre sur la gestion de clusters Proxmox VE}{}{}{}{} % arguments 3 to 6 are optional
-\cventry{2014 à aujourd'hui}{Développement plugin Wordpress gestion mailing lists}{}{}{}{} % arguments 3 to 6 are optional
-\cventry{2015}{Développement logiciel de gestion CLI pour PrestaShop}{}{}{}{} % arguments 3 to 6 are optional
+\cventry{2013}{Développement plugin Nagios supervision de clusters Proxmox VE}{}{}{}{} % arguments 3 to 6 are optional
+%\cventry{2014 à aujourd'hui}{Développement plugin Wordpress gestion mailing lists}{}{}{}{} % arguments 3 to 6 are optional
+%\cventry{2015}{Développement logiciel de gestion CLI pour PrestaShop}{}{}{}{} % arguments 3 to 6 are optional
+
 
 %\subsection{Various}
 %\cventry{start-end}{<Brief Description>}{<Institution>}{<Place>}{<Country>}{<Description>} % arguments 3 to 6 are optional
 
-%Section
-\section{Diplômes obtenus}
+\hfill \break
+\section{\faGraduationCap \space Diplômes obtenus}
 \cventry{2013-2014}{Licence Pro. ISVD}{IUT}{34500 Béziers}{}{Formation en alternance} % arguments 3 to 6 are optional
 \cventry{2012-2013}{Licence Pro. ASUR}{IUT}{34500 Béziers}{}{Formation en alternance} % arguments 3 to 6 are optional
 \cventry{2010-2012}{BTS Informatique de Gestion}{Lycèe Providence}{50400 Avranches}{}{Option Administrateur de réseaux locaux} % arguments 3 to 6 are optional
