@@ -44,15 +44,15 @@
 % personal data
 \firstname{Damien}
 \familyname{PIQUET}
-\title{Développeur / SysAdmin}               % optional, remove the line if not wanted
-\address{7, Chemin patte d'oie}{14111 Louvigny}    % optional, remove the line if not wanted
+\title{Développeur fullstack}               % optional, remove the line if not wanted
+\address{6, Rue Saint Martin}{14930 Vieux}    % optional, remove the line if not wanted
 \mobile{06 43 26 80 90}                    % optional, remove the line if not wanted
 %\phone{<Phone number>}                      % optional, remove the line if not wanted
 %\fax{<Fax number>}                          % optional, remove the line if not wanted
 \email{piqudam@gmail.com}                      % optional, remove the line if not wanted
 %\extrainfo{additional information (optional)} % optional, remove the line if not wanted
-\photo[84pt][0pt]{cv_photo.png}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
-%\quote{"Success is the ability to go from failure to failure without losing your enthusiasm." -- Winston Churchill}                 % optional, remove the line if not wanted
+\photo[84pt][0pt]{moi.jpg}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+\quote{Découvrez mes dernières réalisations: \url{https://damienpiquet.pages.dev}}                 % optional, remove the line if not wanted
 
 %\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
 
@@ -67,11 +67,11 @@
 %Section
 \section{\faUser \space Informations Personnelles}
 \cvcomputer{Né le :}{\small 20 Mai 1988 (Granville)\normalsize} {Permis :}{\small B, véhiculé\normalsize}
-\cvcomputer{Langues :}{\small Français, Anglais (lu, écrit, parlé)\normalsize}{}{}
+\cvcomputer{Langues :}{\small Français, Anglais\normalsize}{}{}
 
 \hfill \break
 
-\cvcomputer{\faGithubSquare}{\small \url{https://github.com/dpiquet}\normalsize}{\faCubes}{\small \url{https://hub.docker.com/u/dpik/}}
+\cvcomputer{\faGithubSquare}{\small \url{https://github.com/dpiquet}\normalsize}{\faHome}{\small \url{https://damienpiquet.pages.dev}}
 \cvline{\faLinkedinSquare}{\small \url{https://www.linkedin.com/in/dpiquet/}\normalsize}
 %\cvline{Blog}{\small \url{<Link to profile>}\normalsize}
 %\cvline{Skype}{\small <skype>\normalsize}
@@ -84,18 +84,24 @@
 \hfill \break
 
 %Section
-\section{\faCogs \space Compétences techniques} 
-\cvcomputer{Langages :}{PHP, HTML/CSS, XML, JavaScript/Ajax, SQL, Perl, Python} {Scripting :}{Bash, batch, expressions rationnelles POSIX}
-\cvcomputer{Plateformes :}{Docker, Linux Debian, Ubuntu} {Services :}{DNS, MySQL, Postgres, Apache2, RabbitMq, Memcached, Git, SVN, Redmine, Jenkins}
-\cvcomputer{Frameworks :}{Symfony, Drupal, WordPress, Django, PHPUnit}{Virtualisation :}{Proxmox VE, VirtualBox}
+\section{\faCogs \space Compétences techniques principales}
+% \cvcomputer{Langages :}{PHP, TypeScript, C\#, HTML/CSS, HLSL} {Scripting :}{Bash, Python}
+% \cvcomputer{Plateformes :}{Docker, Kubernetes} {Services :}{DNS, MySQL, Postgres, Apache2, RabbitMq, Memcached, Git, SVN, Redmine, Jenkins}
+% \cvcomputer{Frameworks :}{Symfony, Drupal, WordPress, Unity}{Virtualisation :}{Proxmox VE, VirtualBox}
+
+\cvcomputer{\textbf{Backend}}{Symfony, ApiPlatform, PHP, Doctrine, SQL, C\#, Postgres} {\textbf{Frontend}}{Angular, Typescript, CSS, NgRx, Bootstrap}
+\cvcomputer{\textbf{3d}}{Unity, Godot, ThreeJs, HLSL, Blender, Material Maker} {\textbf{Déploiement}}{Git, Docker, Kubernetes, Prometheus, Github Actions, Sentry}
+% \cvcomputer{Frameworks :}{Symfony, Drupal, WordPress, Unity}{Virtualisation :}{Proxmox VE, VirtualBox}
 
 \hfill \break
 
 %Section
 \section{\faLineChart \space Expériences Professionnelles}
 %\subsection{Contrats}
-\cventry{2019 à aujourd'hui}{DevOps}{forlabs}{14280 Saint Contest}{}{}
-\cventry{2015 à 2019}{Développeur / SysAdmin}{téïcée}{14760 Brettevile/Odon}{}{}
+% \cventry{2021 à aujourd'hui}{Développeur fullstack freelance}{-}{14280 Saint Contest}{}{}
+\cventry{2023 à aujourd'hui}{Développeur fullstack freelance}{}{}{}{}
+\cventry{2019 à aujourd'hui}{Développeur fullstack \& DevOps}{forlabs}{14280 Saint Contest}{}{}
+\cventry{2015 à 2019}{Développeur fullstack / SysAdmin}{téïcée}{14760 Brettevile/Odon}{}{}
 \cventry{2014 à 2015}{Administrateur Système / Réseau}{DoYouSoft}{34500 Béziers}{}{} % arguments 3 to 6 are optional
 \cventry{2012 à 2014}{Apprenti Administrateur Système / Réseau}{IUT de Béziers}{34500 Béziers}{}{} % arguments 3 to 6 are optional
 % \cventry{2011}{Réalisation site web}{Clinique Henry Guillard}{50430 Coutances}{}{} % arguments 3 to 6 are optional
@@ -109,10 +115,63 @@
 
 \hfill \break
 
-\section{\faLightbulbO \space Projets personnels}
-\cventry{2018}{Développement interface web de développement pour Memcached}{}{}{}{}
-\cventry{2014}{Relecture technique "Proxmox High Availability"}{Packt Publishing}{}{}{} % arguments 3 to 6 are optional
-\cventry{2013}{Développement plugin Nagios supervision de clusters Proxmox VE}{}{}{}{} % arguments 3 to 6 are optional
+\section{\faLightbulbO \space Derniers Projets}
+
+% \cventry{}{Klodios}{Forlabs}{Symfony \textperiodcentered ApiPlatform \textperiodcentered Angular \textperiodcentered Matomo \textperiodcentered PSC \textperiodcentered Github Actions \textperiodcentered Kubernetes}{}{}
+\cvline{\textbf{Klodios}}{Klodios est une plateforme qui regroupe en un seul lieu les connaissances et ressources en santé d’une manière simple, rapide et sécurisée}
+\cvline{}{\textperiodcentered Développement backend Symfony / Api Platform}
+\cvline{}{\textperiodcentered Développement frontend (Angular, NgRx, Nx)}
+\cvline{}{\textperiodcentered Intégration d'api tierces (Matomo, Pro Sante Connect)}
+\cvline{}{\textperiodcentered CI/CD (Github Actions)}
+\cvline{}{\textperiodcentered Déploiement (Scaleway, Kubernetes)}
+
+\
+
+\cvline{\textbf{Followme}}{FollowMe est une appli qui informe les patients des urgences et leurs proches en temps réel.}
+\cvline{}{\textperiodcentered Développement backend Symfony / Api Platform}
+\cvline{}{\textperiodcentered Développement frontend (Angular, NgRx, Nx)}
+\cvline{}{\textperiodcentered Intégration d'api tierces}
+\cvline{}{\textperiodcentered Server side events (Mercure)}
+\cvline{}{\textperiodcentered CI/CD (Github Actions)}
+\cvline{}{\textperiodcentered Déploiement (Docker)}
+
+\
+
+\cvline{\textbf{Hopp}}{Hopp est une plateforme d'aide au diagnostique et au soin de blessures sportives}
+\cvline{}{\textperiodcentered Développement backend Symfony / Api Platform}
+\cvline{}{\textperiodcentered Développement frontend (Angular)}
+\cvline{}{\textperiodcentered Intégration 3d interactive (ThreeJs)}
+\cvline{}{\textperiodcentered CI/CD (Github Actions)}
+\cvline{}{\textperiodcentered Déploiement (Docker)}
+
+
+\
+
+\cvline{\textbf{Domino's Commissary}}{Domino's Commissary est l'application qui permet aux points de vente de se réapprovisionner auprès de la centrale.}
+\cvline{}{\textperiodcentered Développement backend PHP natif / framework propriétaire}
+\cvline{}{\textperiodcentered Modernisation du core / intégration de composants Symfony}
+\cvline{}{\textperiodcentered Intégration d'API tierces (Chili publish, Erp, ...)}
+\cvline{}{\textperiodcentered CI/CD (Github Actions)}
+\cvline{}{\textperiodcentered Déploiement (Docker)}
+\cvline{}{\textperiodcentered Supervision / MCO (Prometheus, Grafana, BorgBackup)}
+
+\
+
+\cvline{\textbf{Domus Columns}}{Domus Columns est une nouvelle façon de jouer à Columns. Placez les gemmes sur le plateau avant la fin du temps imparti.}
+\cvline{}{\textperiodcentered Développement (Unity)}
+\cvline{}{\textperiodcentered Game Design}
+\cvline{}{\textperiodcentered Publication sur le Google Play Store}
+
+
+\
+
+\cvline{\textbf{Merry Christmas Santa}}{Merry Christmas Santa est un jeu d'infiltration créé en une semaine pour la Jam de l'avent. Le jeu est une parodie de Metal Gear Solid.}
+\cvline{}{\textperiodcentered Développement (Unity)}
+\cvline{}{\textperiodcentered Game Design}
+\cvline{}{\textperiodcentered Intégration d'IA et de navigation}
+\cvline{}{\textperiodcentered Publication sur Itch.io}
+
+
 %\cventry{2014 à aujourd'hui}{Développement plugin Wordpress gestion mailing lists}{}{}{}{} % arguments 3 to 6 are optional
 %\cventry{2015}{Développement logiciel de gestion CLI pour PrestaShop}{}{}{}{} % arguments 3 to 6 are optional
 
